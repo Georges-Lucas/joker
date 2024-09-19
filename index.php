@@ -6,7 +6,7 @@
     <!-- En-tête de la page -->
     <header>
         <h1>
-            <span aria-hidden="true">🤡</span>
+            <span aria-hidden="true">🤡</span>Le Joker
         </h1>
     </header>
 

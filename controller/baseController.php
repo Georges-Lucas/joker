@@ -6,7 +6,7 @@
     $_years = new DateTime("Y");
 
     class User{
-        public $title = "Le joker";
+        public $title = "Le Joker";
         static $info ="Informations sur le film Le Joker";
     }
 
