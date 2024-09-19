@@ -6,7 +6,7 @@
     <!-- En-tête de la page -->
     <header>
         <h1>
-            <span aria-hidden="true">🤡</span>Le Joker
+            <span aria-hidden="true">🤡</span>
         </h1>
     </header>
 
@@ -46,7 +46,7 @@
         <!-- Section Date de Sortie -->
         <section class="release-date">
             <h2>Date de Sortie</h2>
-            <p>9 octobre <time datetime="2019-09-09">2019</time></p>
+            <p><time datetime="<?= $_date?>"><?= $_years->format('d/M/Y')?></time></p>
         </section>
 
         <!-- Bouton vers AlloCiné -->
@@ -60,5 +60,8 @@
     </main>
 
     <!-- Pied de page -->
+    <?php
+    include_once __DIR__ . '/template/footer.inc.php';
+?>
 </body>
 </html>
