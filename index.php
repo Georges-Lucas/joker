@@ -1,5 +1,6 @@
 <?php
-    include_once __DIR__ . './template/header.inc.php'
+    include_once __DIR__ . '/controller/baseController.php';
+    include_once __DIR__ . '/template/header.inc.php';
 ?>
 <body>
     <!-- En-tête de la page -->
