@@ -1,25 +1,4 @@
-/* Reset CSS */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*,
-*::before,
-*::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    font-size: 62.5%; /* 1rem = 10px (pour une meilleure gestion des rem) */
-}
-
-body {
-    font-size: 1.6rem; /* 16px par défaut pour le texte principal */
-    font-family: 'Poppins', sans-serif;
-    background-color: #212121;
-    color: #333;
-    line-height: 1.6;
-}
-
+@import url(reset.css);
 .material-symbols-outlined {
   font-variation-settings:
   'FILL' 0,
@@ -31,15 +10,21 @@ body {
   
 }
 
+:root{
+    --color-primary-bg: #212121;
+    --color-primary-text: #333;
+    --color-header-bg: #fafafa;
+    --color-shadow : rgba(0, 0, 0, 0.1);
+}
 
 /* Structure de base */
 header, main, footer {
     max-width:120rem;
     margin: 2rem auto;
     padding: 2rem;
-    background-color: #fafafa;
+    background-color: var(--color-header-bg);
     border-radius: 0.8rem;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 1rem var(--color-shadow);
 }
 header, footer{
     background-color: inherit;
@@ -136,4 +121,8 @@ footer {
 footer p {
     color: #777;
     font-size: 1.4rem;
+}
+
+pre{
+    background-color: white;
 }
