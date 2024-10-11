@@ -12,36 +12,7 @@
     }
 
     #instance
-    $newtitle = new User();
-    class film{
-        // Your code here!
-        public function actorsInfo(){
-            $actors = [
-                array(
-                    "prenom"=>"Joaquin",
-                    "nom"=>"Phoenix",
-                    "role"=>"dans le rôle d'Arthur Fleck (Joker)"
-                ),
-                array(
-                    "prenom"=>"Robert",
-                    "nom"=>"De Niro",
-                    "role"=>"dans le rôle de Murray Franklin"
-                ),
-                array(
-                    "prenom"=>"Zazie",
-                    "nom"=>"Beetz",
-                    "role"=>"dans le rôle de Sophie Dumond"
-                ),
-                array(
-                    "prenom"=>"Frances",
-                    "nom"=>"Conroy",
-                    "role"=>"dans le rôle de Penny Fleck"
-                ),
-                
-            ];
-            return $actors;
-        }
-    }
+    
     class histoire{
         public function storyline(){
             $story=[
@@ -55,6 +26,6 @@
             return $story;
         }
     }
-    $instance_user = new film();
+    // $instance_user = new film();
     $instance_histoire = new histoire();
 ?>

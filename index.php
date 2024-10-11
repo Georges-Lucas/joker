@@ -33,38 +33,14 @@
 
         <!-- Section Cast -->
         <section class="cast">
-            <h2>Cast Principal<?= $navigator?></h2>
+            <h2>Cast Principal</h2>
             <ul>
-                <?php
-                    // $instance_user = new Nom();
-                    $actors = $instance_user->actorsInfo();
-                    // foreach ($actors as $key => $index){
-                    //     echo "<li><strong>";
-                    //     foreach ($index as $keys => $values){
-                    //         if($keys == "role"){
-                    //             echo "</strong> $values</li>";
-                    //         }else{
-                    //             echo "$values ";
-                    //         }
-                            
-                            
-                    //     }
-                    // }
-                ?>
-                <?php foreach($actors as $role):?>
-                    <ul>
-                        <li>
-                            <strong><?= $role['prenom']." ".$role['nom'] ?>
-                            </strong> <?= $role['role'] ?>
-                        </li>
-                    
-                    </ul>
-                <?php endforeach;?>
-                <!-- <li><strong>Joaquin Phoenix </strong>dans le rôle d'Arthur Fleck (Joker)</li>
-                <li><strong>Robert De Niro</strong> dans le rôle de Murray Franklin</li>
-                <li><strong>Zazie Beetz</strong> dans le rôle de Sophie Dumond</li>
-                <li><strong>Frances Conroy</strong> dans le rôle de Penny Fleck</li> -->
+                <?php include_once __DIR__ . '/model/model.php';  ?>
             </ul>
+                <?php
+                    // $actors = $instance_user->actorsInfo();
+                ?>
+                
         </section>
 
         <!-- Section Date de Sortie -->
@@ -80,7 +56,7 @@
                     video_file
                 </span>Voir la bande-annonce
             </a>
-        </section>
+        </section> 
     </main>
 
     <!-- Pied de page -->
