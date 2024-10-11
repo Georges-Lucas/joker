@@ -1,4 +1,5 @@
-@import url(reset.css);
+@import url(./reset.css);
+
 .material-symbols-outlined {
   font-variation-settings:
   'FILL' 0,
@@ -11,10 +12,10 @@
 }
 
 :root{
-    --color-primary-bg: #212121;
+    --color-primary-bg : #212121;
     --color-primary-text: #333;
     --color-header-bg: #fafafa;
-    --color-shadow : rgba(0, 0, 0, 0.1);
+    --color-shadow: rgba(0, 0, 0, 0.1);
 }
 
 /* Structure de base */
@@ -124,5 +125,5 @@ footer p {
 }
 
 pre{
-    background-color: white;
+    background-color: var(--color-header-bg);
 }
