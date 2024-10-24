@@ -55,7 +55,7 @@
                 </li>
 
             
-            <?php endforeach; ?>  
+                <?php endforeach; ?>  
             </ul>
           
         </section>
